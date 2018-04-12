@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>帐户列表</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    
+    <!-- 样式 -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/icon.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/color.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/easyui.css" />							
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/account-list.css" />	
+	<!-- 脚本 -->
+	<!-- jquery -->
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery-2.1.4.js">
+	</script>
+	<!-- jquery easyui -->	
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery.easyui.min.js">
+	</script>  		  	
+	<!--  -->
+	<script type="text/javascript" lang="javascript" src="../script/common.js">
+	</script> 
+	<script type="text/javascript" lang="javascript" src="../script/account-list.js">
+	</script> 
+	
+  </head>
+  
+  <body>
+  	<div class="middle-layout">
+  		<div id="header-style" class="head-font-size">帐户列表</div> 
+  		<!-- 搜索栏 -->
+  		<div id="search">
+			<label class="label-style" style="margin-right: 20px;">用&nbsp;户&nbsp;名</label><input type="text" name="username" value="" class="input-text-third-length"/>
+			<label class="label-style" style="margin-left: 15px;">来&nbsp;源</label>
+			<input type="text" name="source" class="input-text-third-length" style="margin-left: 20px;" />
+			<br />			
+			<label class="label-style" style="margin-right: 16px;">状&nbsp;态</label>
+			<select style="margin-left: 20px;" name="status">
+				<option value="">全部</option>
+				<option value="1" selected="selected">有效</option>
+				<option value="0">无效</option>					
+			</select>
+				<label class="label-style">级&nbsp;别</label>
+				<select style="margin-left: 20px;">
+					<option value="1" selected="selected">普通</option>
+					<option value="2">加密</option>
+					<option value="3">绝密</option>					
+				</select>
+				<label class="label-style" style="margin-left: 20px; margin-right: 20px;">类&nbsp;型</label>
+				<select style="margin-left: 13px;">
+					<option value="1" selected="selected">普通</option>
+					<option value="2">邮箱</option>
+					<option value="3">金融</option>
+					<option value="4">网络</option>								
+				</select>		
+			<br />
+			<div style="margin-top: 10px;margin-bottom: 10px;">
+				<label class="label-style" style="margin-left: 15px;">有效期至</label>
+				<input id="expireDateBegin" type="text" name="expireDateBegin" class="input-text-third-length" /><span class="word-distance-style">---</span>
+				<input id="expireDateEnd" type="text" name="expireDateEnd" class="input-text-third-length" />	
+			</div>
+			<div style="margin-bottom: 10px;">
+				<label class="label-style" style="margin-left: 15px;">创建时间</label>
+				<input id="createDateTimeBegin" type="text" name="createDateTimeBegin" class="input-text-third-length" /><span class="word-distance-style">---</span>
+				<input id="createDateTimeEnd" type="text" name="createDateTimeEnd" class="input-text-third-length" />	
+			</div>
+			<div style="margin-bottom: 10px;">
+				<label class="label-style" style="margin-left: 15px;">更新时间</label>
+				<input id="updateDateTimeBegin" type="text" name="updateDateTimeBegin" class="input-text-third-length" /><span class="word-distance-style">---</span>
+				<input id="updateDateTimeEnd" type="text" name="updateDateTimeEnd" class="input-text-third-length" />	
+			</div>
+		  	</div>
+			<div style="float:right; margin-right: 220px; margin-top: 10px;">
+				<a href="#" class="easyui-linkbutton two-words-button" onclick="search();">搜&nbsp;索</a> 
+				<a href="#" class="easyui-linkbutton two-words-button" onclick="">重&nbsp;置</a>
+			</div>
+		<div style="clear: both;"></div>
+		<br />
+		<table id="dataGrid"></table>	
+	</div>
+  </body>
+  
+</html>

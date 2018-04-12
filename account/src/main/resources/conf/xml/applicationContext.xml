@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	" default-lazy-init="true">
+	
+	<!-- resource 使用的是相对路径 -->
+	<import resource="spring-bean.xml"/>
+	
+	<!-- basic config -->
+	<import resource="spring-config.xml"/>
+	
+	<!--  -->
+	<import resource="spring-dao.xml"/>
+	
+	<!-- Orm: JPA(Hibernate) -->
+	<import resource="spring-jpa.xml"/>
+	
+	<!--  -->
+	<import resource="spring-service.xml"/>
+	
+	<!-- cache: reids -->
+<!-- 	<import resource="spring-cache.xml"/> -->
+	
+</beans>

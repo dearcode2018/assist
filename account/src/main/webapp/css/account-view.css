@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/* Cascading Style Sheet 层叠样式表 */
+/*
+@filename account-view.css
+@version 1.0
+@description 查看帐户
+@author qianye.zheng
+*/
+
+
+.image-view-style
+{
+	 width: 250px;
+	 height: 150px;
+	 float: left;
+	 margin-left: 10px;
+}
+
+.slider{height:170px; margin:20px auto; overflow:hidden; position:relative;}
+.sliderbox{position:relative;}/*必须加这句css,否则向左右，上下滚动时会没有效果*/
+

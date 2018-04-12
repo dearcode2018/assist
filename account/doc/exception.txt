@@ -1,0 +1,51 @@
+exception 解决方法
+
+1)Caused by: java.lang.NoSuchMethodError: javax.persistence.Table.indexes()[Ljavax/persistence/Index;
+解决方法: 去掉 @Table注解，将表名写到Entity注解name属性中.
+@Entity(name="news_inf- 表名")
+public class News
+
+
+2)Not allowed to create transaction on shared EntityManager - use Spring transactions or EJB CMT instead
+dictDao.getEntityManager().getTransaction().begin(); // 注解方法: 注释掉
+dictDao.getEntityManager().persist(dict);
+dictDao.getEntityManager().getTransaction().commit(); // 注解方法: 注释掉
+
+不能使用Spring托管的EntityManager获取Transaction。			
+3)javax.persistence.TransactionRequiredException: No transactional EntityManager available
+@Transactional 注解使用方案
+a.CoreDaoImpl 上需要标注 @Transactional注解
+b.CoreDaoImpl的子类标注@Transactional注解，且不能为final类
+c.
+4)
+
+5)
+
+6)
+
+7)
+
+8)
+
+9)
+
+10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

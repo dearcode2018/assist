@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+/* Cascading Style Sheet 层叠样式表 */
+/*
+@filename login.css
+@version 1.0
+@description 登录
+@author qianye.zheng
+*/
+
+
+#header
+{
+	background-color: #FF359A;
+	margin-bottom: 50px;
+	/* 文本居中对齐 */
+	text-align: center;
+}
+
+#username
+{
+	margin-bottom: 20px;
+}
+
+#password
+{
+	margin-bottom: 20px;
+}
+
+#loginBtn
+{
+
+}	
+
+
+
+
+
+
+
+
+

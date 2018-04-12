@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>登录</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    
+    <!-- 样式 -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/icon.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/color.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/easyui.css" />							
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/login.css" />	
+	<!-- 脚本 -->
+	<!-- jquery -->
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery-2.1.4.js">
+	</script>
+	<!-- jquery easyui -->	
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery.easyui.min.js">
+	</script>  		  	
+	<!--  -->
+	<script type="text/javascript" lang="javascript" src="../script/common.js">
+	</script> 
+	<script type="text/javascript" lang="javascript" src="../script/login.js">
+	</script> 
+	
+  </head>
+  
+  <body>
+  	<!--  -->
+	<form action="/http-session/api/sys/login" method="get">
+		<div id="second-layout-style">
+			<div id="header-style" class="head-font-size">登&nbsp;&nbsp;&nbsp;&nbsp;录</div>
+			<div id="password" class="normal-font-size" style="float:left; margin-left: 200px; margin-top: 40px;">密&nbsp;码 &nbsp;&nbsp;<input type="password" name="password" value="" /></div>
+			<div style="clear: both;"></div>
+			<div style="float:left; margin-left: 260px;">
+				<a href="#" class="easyui-linkbutton two-words-button">登&nbsp;录</a>
+			</div>
+			<div style="float:left; margin-left: 10px;">
+				<a href="#" class="easyui-linkbutton two-words-button normal-font-size">重&nbsp;置</a>
+			</div>
+		</div>	
+	</form>
+  </body>
+  
+</html>

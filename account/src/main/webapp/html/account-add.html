@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新增帐户</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    
+    <!-- 样式 -->
+	<link rel="stylesheet" type="text/css" href="../resources/css/icon.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/color.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/easyui.css" />							
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/account-add.css" />	
+	<!-- 脚本 -->
+	<!-- jquery -->
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery-2.1.4.js">
+	</script>
+	<!-- jquery easyui -->	
+	<script type="text/javascript" lang="javascript" src="../resources/script/jquery.easyui.min.js">
+	</script>  		  	
+	<!--  -->
+	<script type="text/javascript" lang="javascript" src="../script/common.js">
+	</script> 
+	<script type="text/javascript" lang="javascript" src="../script/account-add.js">
+	</script> 
+  </head>
+  
+  <body>
+  	<form id="form" action="/api/" method="post" enctype="multipart/form-data">
+		<div class="middle-layout">
+			<div id="header-style" class="head-font-size">新增帐户</div> 
+			<div id="base-info-head" class="head-font-size-second title-level-one">基本信息</div>
+			<div id="base-info" class="normal-font-size">
+				<label class="label-style" style="margin-right: 20px;">用&nbsp;户&nbsp;名</label><input type="text" name="username" value="" class="input-text-third-length"/>
+				<label class="label-style" style="margin-right: 30px; margin-left: 115px;">状&nbsp;态</label>
+				<input type="radio" name="status" value="1" checked="checked" style="margin-right: 20px;" />&nbsp;有	&nbsp;效 							
+				<input type="radio" name="status" value="0" style="margin-left: 25px;margin-right: 20px;" />&nbsp;无&nbsp;效 		
+				<br />
+				<label class="label-style">输入密码</label><input id="password" type="password" name="password" value="" class="input-text-third-length" />
+				<label class="label-style" style="margin-left: 113px;">再次输入</label><input type="password" name="confirmPassword" value="" class="input-text-third-length" />
+				<br />			
+				<label class="label-style">级&nbsp;别</label>
+				<select style="margin-left: 20px;" name="level">
+					<option value="1" selected="selected">普通</option>
+					<option value="2">加密</option>
+					<option value="3">绝密</option>					
+				</select>
+				<label class="label-style" style="margin-left: 20px; margin-right: 20px;">类&nbsp;型</label>
+				<select style="margin-left: 13px;" name="type">
+					<option value="1" selected="selected">普通</option>
+					<option value="2">邮箱</option>
+					<option value="3">金融</option>
+					<option value="4">网络</option>								
+				</select>			
+				<label class="label-style" style="margin-left: 117px;">来&nbsp;源</label>
+				<input type="text" name="source" class="input-text-third-length" style="margin-left: 20px;" />
+				<br />
+				<label class="label-style">用&nbsp;途</label><input type="text" name="usage" class="input-text-third-length" style="margin-left: 25px;" />
+				<label class="label-style" style="margin-left: 113px;">有效期至</label><input id="expireDate" type="text" name="expireDate" class="input-text-third-length" />	
+				<br />
+				<label class="label-style">关联帐号</label><input type="text" name="relationalAccounts" class="input-text-first-length" />								
+			</div>		
+			<div id="extend-info-head" class="head-font-size-second title-level-one">扩展信息</div>	
+			<div id="extend-info-info" class="normal-font-size">
+				<label class="label-style">手机号码</label><input type="text" name="mobilePhone" class="input-text-third-length" style="margin-right: 3px;"  />
+				<label class="label-style"  style="margin-right: 25px;">邮&nbsp;箱</label><input type="text" name="email" class="input-text-second-length"/>
+				<br />				
+				<label class="label-style" style="margin-right: 40px;">官&nbsp;网</label><input type="text" class="input-text-first-length" name="officialLink" />	
+				<br />				
+				<label class="label-style">登录入口</label><input type="text" name="loginLink" class="input-text-first-length" />									
+				<br />								
+				<label class="label-style">位置信息</label><input type="text" name="location" class="input-text-first-length" />		
+				<br />
+				<div class="div-remark-word-style">备&nbsp;注</div>
+				<textarea name="remark"></textarea>													
+			</div>
+			<div id="certifacate-info-head" class="head-font-size-second title-level-one">图片信息</div>
+			<div id="certifacate-info" class="normal-font-size">
+				<input type="file" name="file1" class="input-file-style" />
+				<input type="file" name="file2" class="input-file-style" />
+				<input type="file" name="file3" class="input-file-style" />
+				<input type="file" name="file4" class="input-file-style" />
+				<input type="file" name="file5" class="input-file-style" />
+				<input type="file" name="file6" class="input-file-style" />												
+			</div>				
+				<div style="float:right; margin-right: 100px; margin-top: 20px;">
+					<a href="#" class="easyui-linkbutton two-words-button" onclick="add();">保&nbsp;存</a>
+					<a href="#" class="easyui-linkbutton two-words-button" onclick="history.back();">返&nbsp;回</a>
+				</div>						
+		</div>
+	</form>
+  </body>
+  
+</html>

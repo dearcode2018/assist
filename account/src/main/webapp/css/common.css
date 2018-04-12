@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+/* Cascading Style Sheet 层叠样式表 */
+/*
+@filename common.css
+@version 1.0
+@description 公共部分
+@author qianye.zheng
+*/
+
+.middle-layout 
+{
+	width:800px;
+	height: 900px;
+	//position:absolute; 
+	top: 50%;
+	left: 50%;
+	margin:0 auto;
+	border:0px solid; 
+	background-color: #FCFCFC;
+}
+
+.main-layout 
+{
+	width:400px;
+	height: 200px;
+	position:absolute; 
+	top: 50%;
+	left: 50%;
+	margin:-100px 0 0 -200px;	
+}
+
+#second-layout-style
+{
+	width:600px;
+	height: 300px;
+	position:absolute; 
+	top: 50%;
+	left: 50%;
+	margin:-180px 0 0 -300px;
+	border:0px solid; 
+	background-color: #FCFCFC;
+}
+
+#header-style
+{
+	//margin-top: 10px;
+	margin-bottom: 30px;	
+	background-color: #66B3FF;
+	/* 文本居中对齐 */
+	text-align: center;
+}
+
+/* 2个中文字符按钮 */
+.two-words-button
+{
+	width:50px;
+}
+
+/*  */
+.both-border-width
+{
+	border-top: 
+}
+
+/* 正常字体 */
+.normal-font-size
+{
+	font-size: 15px;
+}
+
+/* 标题字体大小 */
+.head-font-size
+{
+	font-size: 25px;
+}
+
+/* 二级标题字体大小 */
+.head-font-size-second
+{
+	font-size: 20px;
+}
+
+.title-level-one
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	/* 文本左对齐 */
+	text-align: left;	
+}
+
+.label-style
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+input
+{
+	margin-bottom: 10px;
+}
+
+textarea
+{
+	/* 禁止调整大小 */
+	resize: none; 
+	width: 601px;
+	height: 120px;
+}
+
+/* 备注框字符样式 */
+.div-remark-word-style
+{
+	float: left; 
+	margin-top: 50px; 
+	margin-left: 20px; 
+	margin-right: 35px;
+}
+
+/* 文件上传表 */
+.input-file-style
+{
+	margin-left: 7px;
+	margin-bottom: 15px;
+	background-color: #ECECFF;
+}
+
+.input-text-max-size
+{
+	size: 10;
+}
+
+/* 文本框第一长度 */
+.input-text-first-length
+{
+	width: 600px;
+}
+
+/* 文本框第二长度 */
+.input-text-second-length
+{
+	width: 310px;
+}
+
+/* 文本框第三长度 */
+.input-text-third-length
+{
+	width: 200px;
+}
+
+.word-distance-style
+{
+	margin-left: 35px;
+	margin-right: 35px;
+}
+

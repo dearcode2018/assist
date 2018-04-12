@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	  <style type="text/css">
+		.middle-layout {
+			width: 1500px;
+			height: 900px; 
+			top: 50%;
+			left: 50%;
+			margin: 0 auto;
+			border: 0px solid;
+			background-color: #FCFCFC;
+		}
+		
+		.datalist {
+			border: 1px solid #0058a3; /* 表格边框 */
+			font-family: Arial;
+			border-collapse: collapse; /* 边框重叠 */
+			background-color: #FCFCFC; /* 表格背景色 */
+			font-size: 14px;
+		}
+		
+		.datalist caption {
+			padding-bottom: 5px;
+			font: bold 1.4em;
+			text-align: left;
+		}
+		
+		.datalist th {
+			border: 1px solid #0058a3; /* 行名称边框 */
+			background-color: #4bacff; /* 行名称背景色 */
+			color: #FFFFFF; /* 行名称颜色 */
+			font-weight: bold;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-left: 12px;
+			padding-right: 12px;
+			text-align: center;
+		}
+		
+		.datalist td {
+			border: 1px solid #0058a3; /* 单元格边框 */
+			text-align: center;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		.datalist tr.altrow {
+			background-color: #c7e5ff; /* 隔行变色 */
+		}
+		
+		.idCls
+		{
+			width: 20px;
+		}
+		
+		.username {
+			width: 100px;
+		}
+		
+		.password {
+			width: 50px;
+			color:#FCFCFC;
+			background-color: #FCFCFC;
+		}
+		
+		.status {
+			width: 20px;
+		}
+		
+		.level {
+			width: 20px;
+		}
+		
+		.type {
+			width: 50px;
+		}
+		
+		.source {
+			width: 100px;
+		}
+		
+		.expireDt {
+			width: 100px;
+		}
+		
+		.createDt {
+			width: 100px;
+		}
+		
+		.updateDt {
+			width: 100px;
+		}
+		
+		.remark {
+			width: 100px;
+		}
+		
+		.summary
+		{
+			float: right;
+			margin: 10px;
+		}
+		
+		/* 超链接样式 */
+		a
+		{
+		 	text-decoration: none;
+		}
+		a:link 
+		{
+			color: #0000;
+		} 
+		a:visited 
+		{
+			color: #0000;
+		} 
+		a:hover 
+		{
+			color: #0000;
+		} 
+		a:active 
+		{
+			color: #0000;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		/* 函数 */
+		function rowMouseOver(target)
+		{
+			target.style.backgroundColor = "#c7e5ff";
+		}
+		
+		/* 函数 */
+		function rowMouseOut(target)
+		{
+			target.style.backgroundColor = "#FCFCFC";
+		}		
+		/*
+		  备注限制10个字符，加一个title悬浮提示
+		*/
+	</script>
+  </head>
+  
+  <body>
+    <div style="padding:5px 0;" class="middle-layout">
+		<table id="dataGrid" class="datalist" style="width: 1500px;">
+			<tr>
+				<td>ID</td>			
+				<td class="source">来源</td>
+				<td class="username">用户名</td>
+				<td>密码</td>
+				<td class="status">状态</td>
+				<td class="level">级别</td>
+				<td class="type">类型</td>
+				<td class="expireDt">有效期至</td>
+				<td class="createDt">创建时间</td>
+				<td class="updateDt">更新时间</td>
+				<td class="remark">备注</td>												
+			</tr>
+			<tr onmouseover="rowMouseOver(this);" onmouseout="rowMouseOut(this);">
+				<td class="idCls">123456</td>
+				<td class="source">中华英才网</td>
+				<td class="username">dearzqy2010@qq.com</td>
+				<td class="password">12345678910123</td>
+				<td class="status">有效</td>
+				<td class="level">普通</td>
+				<td class="type">网络帐号</td>
+				<td class="expireDt">无限</td>
+				<td class="createDt">2015-12-10 17:52:50</td>
+				<td class="updateDt">2015-12-10 17:52:50</td>				
+				<td class="remark" title="备注备注备注备注备注">备注备注备注备注备注</td>
+			</tr>
+			<tr onmouseover="rowMouseOver(this);" onmouseout="rowMouseOut(this);">
+				<td class="idCls">2</td>
+				<td class="source"><a href="http://www.baidu.com" target="_blank">百度</a></td>
+				<td class="username">dearzqy2010@qq.com</td>
+				<td class="password">12345678910123</td>
+				<td class="status">有效</td>
+				<td class="level">普通</td>
+				<td class="type">网络帐号</td>
+				<td class="expireDt">无限</td>
+				<td class="createDt">2015-12-10 17:52:50</td>
+				<td class="updateDt">2015-12-10 17:52:50</td>				
+				<td class="remark" title="备注备注备注备注备注">备注备注备注备注备注</td>
+			</tr>
+			<tr onmouseover="rowMouseOver(this);" onmouseout="rowMouseOut(this);">
+				<td class="idCls">3</td>			
+				<td class="source"><a href="http://www.baidu.com" target="_blank">百度</a></td>
+				<td class="username">dearzqy2010@qq.com</td>
+				<td class="password">12345678910123</td>
+				<td class="status">有效</td>
+				<td class="level">普通</td>
+				<td class="type">网络帐号</td>
+				<td class="expireDt">无限</td>
+				<td class="createDt">2015-12-10 17:52:50</td>
+				<td class="updateDt">2015-12-10 17:52:50</td>				
+				<td class="remark" title="备注备注备注备注备注">备注备注备注备注备注</td>
+			</tr>							
+		</table>
+		<div class="summary">总共 3 条记录，更新日期: 2015-12-11</div>
+    </div>
+  </body>
+  
+</html>

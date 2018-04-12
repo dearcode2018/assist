@@ -1,0 +1,32 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+*/.settings/*
+.settings/*
+
+*/.classpath
+.classpath
+
+*/.project
+.project
+*/.tern-project
+
+*/target/*
+target/*
+
+.gitignore
+*/.gitignore
+
+*/.gitattribute*
+
+*/bin/*
+
+*/.springBeans
+
+.DS_Store
+
+.myumldata
+*/.myumldata
