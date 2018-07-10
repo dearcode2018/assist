@@ -17,8 +17,12 @@
 */target/*
 target/*
 
+# add
+#.gitignore
+*/.gitignore
+
 */.gitattribute*
-.gitattribute
+
 */bin/*
 
 */.springBeans
@@ -27,6 +31,3 @@ target/*
 
 .myumldata
 */.myumldata
-
-.gitignore
-
