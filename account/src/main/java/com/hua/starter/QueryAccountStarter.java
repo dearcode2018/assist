@@ -13,7 +13,6 @@ import org.junit.Test;
 
 import com.hua.dao.AccountDao;
 import com.hua.entity.Account;
-import com.hua.test.BaseDaoTest;
 
 /**
  * 描述: 查询帐户 - 启动器
@@ -21,7 +20,7 @@ import com.hua.test.BaseDaoTest;
  * 
  * QueryAccountStarter
  */
-public class QueryAccountStarter extends BaseDaoTest
+public class QueryAccountStarter
 {
 
 	@Resource

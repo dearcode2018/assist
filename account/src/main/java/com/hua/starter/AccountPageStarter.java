@@ -19,7 +19,6 @@ import org.junit.Test;
 
 import com.hua.bean.AccountPublishPage;
 import com.hua.dao.AccountDao;
-import com.hua.test.BaseDaoTest;
 import com.hua.util.MarkerUtil;
 import com.hua.util.ProjectUtil;
 
@@ -29,7 +28,7 @@ import com.hua.util.ProjectUtil;
  * 
  * AccountPageStarter
  */
-public class AccountPageStarter extends BaseDaoTest
+public class AccountPageStarter
 {
 
 
