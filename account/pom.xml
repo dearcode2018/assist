@@ -28,7 +28,7 @@
 		<!-- jdbc -->
 		<jdbc.mysql.version>5.1.34</jdbc.mysql.version>	
 		<!-- jackson -->
-		<jackson.version>2.6.0-rc3</jackson.version>	
+		<jackson.version>2.12.1</jackson.version>	
 		<!-- cache redis -->
 		<redis.version>2.6.2</redis.version>
 		<spring.redis.version>1.6.0.RELEASE</spring.redis.version>	
