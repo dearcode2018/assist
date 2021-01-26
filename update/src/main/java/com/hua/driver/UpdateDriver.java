@@ -9,6 +9,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.codec.Charsets;
+
 import com.hua.bean.UpdateParam;
 import com.hua.bean.UpdateTip;
 import com.hua.constant.Constant;
@@ -225,7 +227,7 @@ public final class UpdateDriver
 		try
 		{
 			// 获取文件数据
-			String data = FileUtil.getString(filePath, Constant.CHART_SET_GB2312);
+			String data = FileUtil.getString(filePath, Charsets.toCharset(Constant.CHART_SET_GB2312));
 			// 遍历组装多个set表达式，一个表达式一行
 			//for (final SetVariable variable : variables)
 			//{
@@ -235,7 +237,7 @@ public final class UpdateDriver
 			// 执行替换
 			data = data.replace(UpdateConstant.OPEN_WORKSPACE_REPLACE_SYMBOL, builder);
 			// 输出到文件
-			FileUtil.writeString(filePath, data, Constant.CHART_SET_GB2312);
+			FileUtil.writeString(filePath, data, Constant.CHART_SET_GB2312, false);
 		} catch (Exception e)
 		{
 			e.printStackTrace();

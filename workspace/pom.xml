@@ -5,23 +5,20 @@
 	<parent>
 		<groupId>com.hua</groupId>
 		<artifactId>assist-entire</artifactId>
-		<version>0.0.1</version>
+		<version>1.0.0</version>
 	</parent>	
 
 	<artifactId>workspace</artifactId>
 	<packaging>jar</packaging>
 	<name>workspace</name>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
-		<common.version>0.0.1</common.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.hua</groupId>
 			<artifactId>common</artifactId>
-			<version>${common.version}</version>
 		</dependency>
 		
 	</dependencies>

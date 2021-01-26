@@ -63,7 +63,7 @@ public final class WriteProperties
 				props.load(inputStream);
 				// 一定要关闭输入流，否则输出文件可能会受到影响
 				inputStream.close();
-				outputStream = new FileOutputStream(ClassPathUtil.getClassSubpath(filePath));
+				outputStream = new FileOutputStream(ClassPathUtil.getClassPath(filePath));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

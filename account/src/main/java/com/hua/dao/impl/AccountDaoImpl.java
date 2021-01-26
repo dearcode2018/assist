@@ -212,11 +212,11 @@ public class AccountDaoImpl extends CoreDaoImpl<Account> implements
 		}
 		if (StringUtil.isNotEmpty(searchBean.getUsername()))
 		{
-			query.setParameter("username", SqlUtil.likeQuery(searchBean.getUsername(), true, true));
+			query.setParameter("username", SqlUtil.likeQuery(searchBean.getUsername()));
 		}
 		if (StringUtil.isNotEmpty(searchBean.getSource()))
 		{
-			query.setParameter("source", SqlUtil.likeQuery(searchBean.getSource(), true, true));
+			query.setParameter("source", SqlUtil.likeQuery(searchBean.getSource()));
 		}
 		if (null != searchBean.getStatus())
 		{
@@ -261,11 +261,11 @@ public class AccountDaoImpl extends CoreDaoImpl<Account> implements
 		final Query countQuery = getEntityManager().createQuery(countJpql.toString());
 		if (StringUtil.isNotEmpty(searchBean.getUsername()))
 		{
-			countQuery.setParameter("username", SqlUtil.likeQuery(searchBean.getUsername(), true, true));
+			countQuery.setParameter("username", SqlUtil.likeQuery(searchBean.getUsername()));
 		}
 		if (StringUtil.isNotEmpty(searchBean.getSource()))
 		{
-			countQuery.setParameter("source", SqlUtil.likeQuery(searchBean.getSource(), true, true));
+			countQuery.setParameter("source", SqlUtil.likeQuery(searchBean.getSource()));
 		}
 		if (null != searchBean.getStatus())
 		{

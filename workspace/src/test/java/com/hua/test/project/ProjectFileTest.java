@@ -99,7 +99,7 @@ public final class ProjectFileTest extends BaseTest {
 	@Test
 	public void testCoverCopy() {
 		try {
-			path = ClassPathUtil.getClassSubpath("/conf/xml/ws/workbench.xml");
+			path = ClassPathUtil.getClassPath("/conf/xml/ws/workbench.xml");
 			File file = new File(path);
 			inputStream = new FileInputStream(file);
 			outputStream = new FileOutputStream("D:/workbench.xml");

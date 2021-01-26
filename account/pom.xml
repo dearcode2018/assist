@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.hua</groupId>
 		<artifactId>assist-entire</artifactId>
-		<version>0.0.1</version>
+		<version>1.0.0</version>
 	</parent>	
 	<artifactId>account</artifactId>
 	<packaging>jar</packaging>
@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
-		<web.version>0.0.1</web.version>
+		<web.version>1.0.0</web.version>
 		<orm.version>0.0.1</orm.version>				
 		<!-- spring -->
 		<spring.version>4.1.6.RELEASE</spring.version>
@@ -41,12 +41,6 @@
 			<groupId>com.hua</groupId>
 			<artifactId>web</artifactId>
 			<version>${web.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.hua</groupId>
-			<artifactId>orm</artifactId>
-			<version>${orm.version}</version>
 		</dependency>
 
 		<!-- spring -->

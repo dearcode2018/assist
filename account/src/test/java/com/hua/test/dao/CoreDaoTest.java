@@ -178,7 +178,7 @@ public class CoreDaoTest extends BaseDaoTest {
 			searchBean.setCode("level");
 			searchBean.setStatus(1);
 			//searchBean.setRemark("hhhhhh");
-			searchBean.setRemark(SqlUtil.likeQuery("hhhhhh", true, true));
+			searchBean.setRemark(SqlUtil.likeQuery("hhhhhh"));
 			dictDao.search(pager, searchBean);
 			System.out.println(pager.getCurrentPage());
 			System.out.println(pager.getDataSize());

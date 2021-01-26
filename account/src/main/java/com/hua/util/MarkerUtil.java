@@ -41,7 +41,7 @@ public final class MarkerUtil
 	static {
 		// 2.3.x以上，当前使用的freemarker版本
 		final Version version = new Version("2.3.23");
-		final File file = new File(ClassPathUtil.getClassSubpath(PATH));
+		final File file = new File(ClassPathUtil.getClassPath(PATH));
 		config = new Configuration(version);
 		// 设置默认编码 (至关重要 - 解决中文乱码问题)
 		config.setDefaultEncoding(Constant.CHART_SET_UTF_8);

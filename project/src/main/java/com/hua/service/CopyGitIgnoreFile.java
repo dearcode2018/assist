@@ -41,7 +41,7 @@ public class CopyGitIgnoreFile
 		FileUtil.deleteFile(tempPath);
 		// 临时文件
 		final File templateFile = new File(tempPath) ;
-		FileUtil.writeString(templateFile, FileUtil.getString(templatePath)+ ".gitignore");
+		FileUtil.writeString(templateFile, FileUtil.getString(templatePath)+ ".gitignore", false);
 		final File file = new File(path);
 		final File[] files = file.listFiles();
 		for (File e : files)

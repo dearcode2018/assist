@@ -26,7 +26,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.hua.test.BaseTest;
-import com.hua.util.FormatUtil;
+import com.hua.util.StringUtil;
 
 
 /**
@@ -79,29 +79,29 @@ public final class DecimalFormatTest extends BaseTest {
 	 * 
 	 */
 	@Test
-	public void testFormatUtil() {
+	public void testStringUtil() {
 		try {
 			
 			
 			String stNumber = "212583212";
-			log.info("testDecimalFormat =====> " + FormatUtil.format(stNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(stNumber));
 			
 			long lnNumber = 1216545L;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(lnNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(lnNumber));
 			
 			double dNumber = 1252.3255;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(dNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(dNumber));
 			
 			float fNumber = 12.334F;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(fNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(fNumber));
 			
 			int iNumber = 123;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(iNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(iNumber));
 			
 			short sNumber = 12;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(sNumber));
+			log.info("testDecimalFormat =====> " + StringUtil.format(sNumber));
 		} catch (Exception e) {
-			log.error("testFormatUtil =====> ", e);
+			log.error("testStringUtil =====> ", e);
 		}
 	}
 	
@@ -115,7 +115,7 @@ public final class DecimalFormatTest extends BaseTest {
 	public void testNullParam() {
 		try {
 			String str = null;
-			log.info("testDecimalFormat =====> " + FormatUtil.format(str));
+			log.info("testDecimalFormat =====> " + StringUtil.format(str));
 			
 		} catch (Exception e) {
 			log.error("testNullParam =====> ", e);
